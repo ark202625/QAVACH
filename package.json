@@ -1,0 +1,13 @@
+{
+  "name": "qavach-backend",
+  "version": "1.0.0",
+  "description": "Backend service for QAVACH",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.17.0"
+  }
+}
