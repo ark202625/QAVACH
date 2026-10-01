@@ -5,6 +5,10 @@ const WebSocket = require('ws');
 const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
+// Health check route for UptimeRobot
+app.get('/', (req, res) => {
+  res.status(200).send('QAVACH Backend is live!');
+});
 
 wss.on('connection', (ws) => {
   console.log('Client connected');
